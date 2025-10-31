@@ -232,17 +232,76 @@ SECTION HERO
 
 .section-hero {
     background-color: #2e2f42;
-    padding: 188px 0;
+}
+
+@media screen and (max-width: 1157px) {
+    .section-hero {
+        padding: 112px 0;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .section-hero {
+        padding: 188px 0;
+    }
 }
 
 .hero-bg-image {
     margin: 0 auto;
     max-width: 1440px;
 
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/hero-mobile-1x.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero-bg-image {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url('../images/hero/hero-mobile-2x.jpg');
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero-bg-image {
+        width: 100%;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url('../images/hero/hero-tablet-1x.jpg');
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-bg-image {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url('../images/hero/hero-tablet-2x.jpg');
+        }
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .hero-bg-image {
+        width: 100%;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url('../images/hero/hero-desktop-1x.jpg');
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-bg-image {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url('../images/hero/hero-desktop-2x.jpg');
+        }
+    }
 }
 
 .hero-title {
@@ -255,6 +314,21 @@ SECTION HERO
     max-width: 496px;
     text-align: center;
     margin: 0 auto 48px;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+        margin: 0 auto 36px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .hero-title {
+        margin: 0 auto 48px;
+    }
 }
 
 .order-button {
@@ -285,6 +359,55 @@ SECTION HERO
 
 /* SECTION FEATURES*/
 
+@media screen and (max-width: 1157px) {
+    .features-section {
+        padding: 96px 0;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .features-section {
+        padding: 120px 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .features-list {
+        display: flex;
+        flex-direction: column;
+        gap: 72px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .features-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 72px;
+        column-gap: 24px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .features-list {
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .features-item {
+        width: calc((100% - 24px) / 2);
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .features-item {
+        width: calc((100% - 72px) / 4);
+    }
+}
+
 .features-section {
     padding: 120px 0;
 }
@@ -309,6 +432,12 @@ SECTION HERO
     background-color: #f4f4fd;
 }
 
+@media screen and (max-width: 1157px) {
+    .features-box {
+        display: none;
+    }
+}
+
 .features-title {
     margin-bottom: 8px;
     font-weight: 500;
@@ -318,11 +447,43 @@ SECTION HERO
     color: #2e2f42;
 }
 
+@media screen and (min-width: 768px) {
+    .features-title {
+        text-align: start;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .features-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .features-text {
+        font-weight: 400;
+    }
+}
+
 /* SECTION TEAM */
 
 .section-team {
     padding: 120px 0;
     background: #f4f4fd;
+}
+
+@media screen and (max-width: 1157px) {
+    .section-team {
+        padding: 96px 0;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .section-team {
+        padding: 120px 0;
+    }
 }
 
 .team-title {
@@ -336,16 +497,47 @@ SECTION HERO
     color: #2e2f42;
 }
 
-.page-main .section-team .team-list {
+.team-list {
     display: flex;
-    gap: 24px;
-    background-color: #f4f4fd;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
+}
+
+@media screen and (min-width: 768px) {
+    .team-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 64px;
+        column-gap: 24px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .team-list {
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
 }
 
 .team-item {
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .team-item {
+        width: calc((100%-24px) / 2);
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .team-item {
+        width: calc((100%-72px) / 4);
+    }
 }
 
 .contain {
@@ -404,13 +596,30 @@ SECTION HERO
 
 /* PORTFOLIO SECTION */
 .portfolio {
-    padding: 120px 0 120px 0;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio {
+        padding-top: 64px;
+        padding-bottom: 96px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .portfolio {
+        padding-top: 100px;
+        padding-bottom: 120px;
+    }
 }
 
 .portfolio-box {
     width: 100%;
     margin: 0 auto;
 }
+
+
 
 .portfolio-title {
     margin-bottom: 72px;
@@ -425,22 +634,35 @@ SECTION HERO
 
 .portfolio-list {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;
-    margin-top: 72px;
+    gap: 48px 24px;
 }
 
-.portfolio-item {
-    width: calc((100% - 48px) / 3);
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 8px;
+@media screen and (min-width: 768px) {
+    .portfolio-list {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 72px;
+        column-gap: 24px;
+    }
+}
 
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 1158px) {
+    .portfolio-list {
+        row-gap: 48px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .portfolio-item:not(:last-child) {
+        margin-bottom: 48px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .portfolio-item {
+        width: calc((100% - 48px) / 3);
+    }
 }
 
 .portfolio-item:hover {
@@ -468,6 +690,18 @@ SECTION HERO
     overflow: hidden;
 }
 
+@media screen and (min-width: 768px) {
+    .portfolio-overlay {
+        width: 356px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .portfolio-overlay {
+        width: 360px;
+    }
+}
+
 .hidden-text {
     position: absolute;
     top: 0;
@@ -491,16 +725,61 @@ SECTION HERO
 /* PAGE FOOTER */
 .page-footer {
     background-color: #2e2f42;
-    padding: 100px 0;
+}
+
+@media screen and (max-width: 1157px) {
+    .page-footer {
+        padding: 96px 0;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .page-footer {
+        padding: 100px 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .page-footer {
+        padding: 100px 0;
+    }
 }
 
 .footer-box {
-    display: flex;
-    align-items: baseline;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .footer-box {
+        width: 552px;
+        text-align: start;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .footer-box {
+        display: flex;
+        text-align: start;
+    }
 }
 
 .footer-logo-box {
-    margin-right: 120px
+    width: 264px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-logo-box {
+        margin: 0 24px 0 0;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .footer-logo-box {
+        margin-right: 120px;
+    }
 }
 
 .logo-footer {
@@ -525,6 +804,16 @@ SECTION HERO
     color: #f4f4fd;
 }
 
+.social-media {
+    margin-top: 72px;
+}
+
+@media screen and (min-width: 768px) {
+    .social-media {
+        margin-top: 0;
+    }
+}
+
 .social-title {
     font-weight: 500;
     font-size: 16px;
@@ -534,10 +823,16 @@ SECTION HERO
     margin-bottom: 16px;
 }
 
+@media screen and (min-width: 768px) {
+    .social-title {
+        margin-top: 0;
+    }
+}
+
 .footer__icon-list {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     gap: 16px;
 }
 
@@ -568,12 +863,23 @@ SECTION HERO
     background-color: #31d0aa;
 }
 
-.page-footer .container .social .social-footer .social-link .link .icon {
-    fill: #f4f4fd;
+@media screen and (max-width: 767px) {
+    .subscribe-wrapper {
+        margin-top: 72px;
+    }
 }
 
-.subscribe-wrapper {
-    margin-left: 80px;
+@media screen and (min-width: 768px) {
+    .subscribe-wrapper {
+        margin-top: 72px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .subscribe-wrapper {
+        margin-top: 0;
+        margin-left: 80px;
+    }
 }
 
 .subscribe-text {
@@ -586,7 +892,16 @@ SECTION HERO
 
 .subscribe-form {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .subscribe-form {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
 }
 
 .subscribe-input {
@@ -604,6 +919,12 @@ SECTION HERO
     border: 1px solid #fff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     outline: none;
+}
+
+@media screen and (min-width: 768px) {
+    .subscribe-input {
+        width: 264px;
+    }
 }
 
 .subscribe-input::placeholder {
