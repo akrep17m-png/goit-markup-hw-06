@@ -949,6 +949,8 @@ SECTION HERO
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1189,4 +1191,24 @@ SECTION HERO
 .modal .modal-form .form-button:hover,
 .modal .modal-form .form-button:focus {
     background-color: #404BBF;
+}
+
+/* MOBILE MENU */
+
+@media screen and (min-width: 768px) {
+    .mobile-menu__open {
+        display: none;
+    }
+}
+
+.mobile-menu__open {
+    padding: 24px 0;
+    line-height: 0;
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+}
+
+.mobile-menu__open-icon {
+    fill: rgba(46, 47, 66, 0.7);
 }
