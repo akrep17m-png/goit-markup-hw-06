@@ -1207,10 +1207,10 @@ PAGE FOOTER
     padding: 120px 0;
   }
 
-  .page-header {
+  /* .page-header {
     max-width: 1440px;
     margin: 0 auto;
-  }
+  } */
 
   .list-contacts {
     display: flex;
