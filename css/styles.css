@@ -75,7 +75,7 @@ body {
 }
 
 .container {
-  min-width: 320px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0 16px 0 16px;
 }
@@ -705,7 +705,7 @@ PAGE FOOTER
 .modal {
   background-color: var(--dairy);
   border-radius: 4px;
-  padding: 72px 16px 16px 24px;
+  padding: 72px 16px 24px 24px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   max-width: 288px;
@@ -932,6 +932,7 @@ PAGE FOOTER
 .mobile-menu-container.is-open {
   visibility: visible;
   pointer-events: auto;
+  opacity: 1;
   transform: translateX(0);
 }
 
@@ -1027,6 +1028,10 @@ PAGE FOOTER
   color: var(--iris);
 }
 
+.contacts-link-accent {
+  color: var(--iris);
+}
+
 .mobile-menu-social-list {
   display: flex;
   flex-direction: row;
@@ -1074,7 +1079,7 @@ PAGE FOOTER
 
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
+    max-width: 768px;
     margin: 0 auto;
   }
 
@@ -1084,6 +1089,10 @@ PAGE FOOTER
 
   .logo-header {
     margin-right: 120px;
+  }
+
+  .list-contacts {
+    gap: 12px;
   }
 
   .section-hero {
@@ -1177,6 +1186,10 @@ PAGE FOOTER
   .icon-box {
     display: none;
   }
+
+  .portfolio-item {
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1185,7 +1198,7 @@ PAGE FOOTER
   }
 
   .container {
-    min-width: 1158px;
+    max-width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
   }
@@ -1195,7 +1208,7 @@ PAGE FOOTER
   }
 
   .page-header {
-    min-width: 1158px;
+    max-width: 1440px;
     margin: 0 auto;
   }
 
@@ -1206,9 +1219,13 @@ PAGE FOOTER
     gap: 40px;
   }
 
+  .contacts-link {
+    font-size: 16px;
+  }
+
   .section-hero {
     padding: 188px 0;
-    min-width: 1158px;
+    max-width: 1440px;
     margin: 0 auto;
   }
 
