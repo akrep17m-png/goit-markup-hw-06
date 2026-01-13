@@ -1200,6 +1200,10 @@ PAGE FOOTER
 }
 
 @media screen and (min-width: 1158px) {
+  body {
+    font-weight: 400;
+  }
+
   .container {
     max-width: 1158px;
     margin: 0 auto;
@@ -1214,6 +1218,10 @@ PAGE FOOTER
     max-width: 1440px;
     margin: 0 auto;
   } */
+
+  .logo-header {
+    margin-right: 76px;
+  }
 
   .list-contacts {
     display: flex;
