@@ -1265,6 +1265,10 @@ PAGE FOOTER
     text-align: start;
   }
 
+  .features-text {
+    font-weight: 400;
+  }
+
   .portfolio-list {
     column-gap: 24px;
     row-gap: 48px;
