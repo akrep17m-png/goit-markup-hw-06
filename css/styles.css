@@ -88,8 +88,10 @@ body {
 
 .page-header {
   border-bottom: 1px solid var(--cornflower);
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow:
+    0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .page-header .container {
@@ -184,21 +186,19 @@ body {
 .mobile-menu-open-icon {
   fill: rgba(46, 47, 66, 0.7);
 }
+
 /* 
-MAIN SECTION
 SECTION HERO 
 */
+
 .section-hero {
   padding: 75px 0;
-  /* Visual */
   background-color: var(--navy-blue);
 }
 
 .hero-bg-image {
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+  background-image:
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/people-office-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -209,10 +209,8 @@ SECTION HERO
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero-bg-image {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url('../images/people-office-2x.jpg');
   }
 }
@@ -236,11 +234,9 @@ SECTION HERO
 }
 
 .order-button {
-  /* Positioning */
   padding: 16px 32px;
   margin-left: auto;
   margin-right: auto;
-  /* Box model */
   display: block;
   align-items: center;
   justify-content: center;
@@ -248,14 +244,12 @@ SECTION HERO
   gap: 10px;
   min-width: 169px;
   height: 56px;
-  /* Typography */
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
   color: var(--white);
-  /* Visual */
   border-radius: 4px;
   border: none;
   background: var(--iris);
@@ -268,6 +262,7 @@ SECTION HERO
 .order-button:focus {
   background-color: var(--ocean);
 }
+
 /* 
 SECTION FEATURES 
 */
@@ -296,7 +291,6 @@ SECTION FEATURES
 }
 
 .features-title {
-  /* Typography */
   font-weight: 700;
   font-size: 36px;
   text-align: center;
@@ -311,12 +305,12 @@ SECTION FEATURES
 /*
 SECTION TEAM
 */
+
 .section-team {
   background: var(--cloud);
 }
 
 .section-team .container {
-  /* Box model */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -331,7 +325,6 @@ SECTION TEAM
 
 .team-title {
   margin-bottom: 72px;
-  /* Typography */
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -341,14 +334,15 @@ SECTION TEAM
 }
 
 .team-item {
-  /* Box model */
   width: 264px;
   height: 428px;
 
   background-color: var(--white);
   border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-item-container {
@@ -357,7 +351,6 @@ SECTION TEAM
 
 .team-specialist {
   margin-bottom: 8px;
-  /* Typography */
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -408,7 +401,6 @@ PORTFOLIO SECTION
 */
 
 .portfolio .container {
-  /* Box model */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -418,7 +410,6 @@ PORTFOLIO SECTION
 
 .portfolio-title {
   margin-bottom: 72px;
-  /* Typography */
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -446,8 +437,10 @@ PORTFOLIO SECTION
 
 .portfolio-item:hover,
 .portfolio-item:focus {
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .hidden-box {
@@ -481,13 +474,13 @@ PORTFOLIO SECTION
 
 .portfolio-item-title {
   margin-bottom: 8px;
-  /* Typography */
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
 }
+
 /* 
 PAGE FOOTER 
 */
@@ -516,8 +509,6 @@ PAGE FOOTER
 .logo-footer {
   display: block;
   margin-bottom: 16px;
-  /*  margin-left: 86px; */
-  /* Typography */
   font-weight: 700;
   font-size: 18px;
   font-family: 'Raleway', sans-serif;
@@ -583,7 +574,6 @@ PAGE FOOTER
 }
 
 .subscribe-wrapper {
-  /* margin-left: auto; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -613,7 +603,6 @@ PAGE FOOTER
   color: var(--white);
   background-color: transparent;
   min-width: 288px;
-  /* min-width: 264px; */
   min-height: 40px;
   flex-shrink: 0;
   padding-left: 16px;
@@ -683,7 +672,8 @@ PAGE FOOTER
   opacity: 0;
   inset: 0;
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition:
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -697,7 +687,9 @@ PAGE FOOTER
   background-color: var(--dairy);
   border-radius: 4px;
   padding: 72px 16px 16px 16px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+  box-shadow:
+    0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   max-width: 288px;
   min-height: 584px;
@@ -722,7 +714,8 @@ PAGE FOOTER
 
   background-color: var(--cornflower);
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -850,7 +843,8 @@ PAGE FOOTER
   justify-content: center;
   fill: transparent;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -950,7 +944,8 @@ PAGE FOOTER
   background-color: var(--cornflower);
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1055,12 +1050,6 @@ PAGE FOOTER
 }
 
 /* MEDIA QUERIES */
-
-/* @media screen and (max-width: 767px) {
-  .header-contacts {
-    display: none;
-  }
-} */
 
 @media screen and (min-width: 768px) {
   .container {
